@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "DA SSL",
+  "version": "0.1",
+  "description": "A local tool for managing explicitly approved manual or automatic actions on SSL errors in Chrome and Chromium.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "DA SSL",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "webNavigation",
+    "nativeMessaging"
+  ]
+}

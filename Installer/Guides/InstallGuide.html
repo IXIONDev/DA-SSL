@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DA SSL — Install guide</title><link rel="stylesheet" href="guide.css">
+</head>
+<body data-command="Install.cmd" data-title-fa="EnglishDA SSL" data-title-en="DA SSL install guide">
+  <main class="guide">
+    <header><div class="logo">SSL</div><div><strong>DA SSL</strong><p data-fa="Set up the extension and helper app" data-en="Set up the extension and helper app"></p></div></header>
+    <div class="language"><button type="button" data-set-lang="fa">English</button><button type="button" data-set-lang="en">English</button></div>
+    <div id="extension-id-card" class="extension-id-card" hidden>
+      <strong data-fa="DA SSL extension ID" data-en="DA SSL extension ID"></strong>
+      <div class="id-row"><code id="extension-id"></code><button id="copy-extension-id" type="button" data-fa="Copy ID" data-en="Copy ID"></button></div>
+      <p id="copy-status" data-fa="The installer registers this ID automatically." data-en="The installer registers this ID automatically."></p>
+      <p class="return-note" data-fa="The ID was found. Return to the Install.cmd window to finish setup; minimize the browser if needed." data-en="The ID was found. Return to the Install.cmd window to finish setup; minimize the browser if needed."></p>
+    </div>
+    <section data-lang="fa" hidden>
+      <h1>English</h1>
+      <p>English. English:</p>
+      <code class="path package-path"></code>
+      <p>English:</p><code class="path command-path"></code>
+      <ol>
+        <li>EnglishChromeEnglish<b>Developer mode</b> English<b>Load unpacked</b> English.</li>
+        <li>English<b>Extension</b> English. Chrome English.</li>
+        <li>English. EnglishChrome English.</li>
+        <li>EnglishChromium EnglishEnter EnglishDA SSL English<code>chrome://extensions</code> English.</li>
+      </ol>
+      <aside><b>English</b><br>English. EnglishChrome English.</aside>
+    </section>
+    <section data-lang="en" hidden>
+      <h1>Install guide</h1>
+      <p>This page opens when setup starts. Extracted package folder:</p>
+      <code class="path package-path"></code>
+      <p>Installer file:</p><code class="path command-path"></code>
+      <ol>
+        <li>In Chrome, turn on <b>Developer mode</b> and choose <b>Load unpacked</b>.</li>
+        <li>From the path above, select the <b>Extension</b> folder. Chrome loads the extension.</li>
+        <li>The installer detects the ID and displays it above. If it cannot, copy the ID from the Chrome card and enter it in the installer window.</li>
+        <li>If asked for a Chromium ID, press Enter to skip it. Then reload DA SSL at <code>chrome://extensions</code>.</li>
+      </ol>
+      <aside><b>Do I repeat this every time?</b><br>No. Setup is needed once for this Windows account and extension ID. You do not need to reinstall it whenever Chrome restarts.</aside>
+    </section>
+  </main>
+  <script src="guide.js"></script>
+</body>
+</html>

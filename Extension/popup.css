@@ -1,0 +1,66 @@
+:root {
+  color-scheme: light;
+  --bg:#f2f6fc; --card:#fff; --text:#17283e; --muted:#718197; --border:#e3eaf2;
+  --accent:#275dad; --accent-soft:#eaf1fb; --green:#20734c; --green-soft:#e8f6ee;
+  --red:#a13c3c; --red-soft:#fff0ee; --amber:#8a591f; --amber-soft:#fff5e6;
+  --shadow:0 12px 32px #1b36520c;
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-width:390px;width:410px;background:var(--bg);color:var(--text);font:14px/1.55 "Segoe UI",Tahoma,sans-serif}
+body{padding:16px;background:radial-gradient(ellipse at top left,#eaf2ff 0,transparent 46%),var(--bg)}
+.app-shell{display:grid;gap:12px}
+.app-header{display:flex;align-items:center;justify-content:space-between;padding:2px 2px 4px}
+.brand{display:flex;align-items:center;gap:11px}
+.brand-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:linear-gradient(145deg,#3475cf,#183f79);color:#fff;font-weight:800;font-size:12px;letter-spacing:.4px;box-shadow:0 7px 15px #23569930}
+.brand h1{font-size:16px;margin:0;font-weight:750;letter-spacing:-.2px}
+.brand p{color:var(--muted);font-size:11px;margin:1px 0 0}
+.icon-button{width:36px;height:36px;padding:0;border:1px solid var(--border);border-radius:11px;background:var(--card);color:var(--muted);font-size:17px;cursor:pointer}
+.card,.settings-panel{background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow)}
+.current-card{padding:16px}
+.card-topline{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.eyebrow{color:var(--muted);font-weight:650;font-size:11px}
+.connection{display:inline-flex;align-items:center;gap:6px;color:var(--green);font-size:11px;font-weight:650}
+.connection i{width:7px;height:7px;border-radius:50%;background:#35a66b;box-shadow:0 0 0 3px #35a66b1a}
+.connection.offline{color:var(--red)}.connection.offline i{background:#d55252;box-shadow:0 0 0 3px #d552521a}
+.domain-value{direction:ltr;text-align:start;font:600 14px/1.55 Consolas,"Segoe UI",monospace;overflow-wrap:anywhere;margin:7px 0 12px}
+.error-row{display:flex;align-items:center;justify-content:space-between;gap:8px;border-top:1px solid var(--border);padding-top:10px;color:var(--muted);font-size:11px}
+.error-value{direction:ltr;text-align:end;color:var(--text);font:12px Consolas,monospace;overflow-wrap:anywhere}
+.status{display:flex;align-items:flex-start;gap:8px;padding:10px 11px;border:1px solid var(--border);border-radius:11px;background:#f7f9fc;color:#52647c;margin:12px 0;font-size:12px}
+.status-dot{flex:none;width:7px;height:7px;margin-top:6px;border-radius:50%;background:#8aa0bc}
+.status.ready{background:var(--green-soft);border-color:#d5ebdd;color:var(--green)}.status.ready .status-dot{background:#31a66b}
+.status.blocked{background:var(--amber-soft);border-color:#f4e3c6;color:var(--amber)}.status.blocked .status-dot{background:#d09237}
+.status.failed{background:var(--red-soft);border-color:#f2d8d5;color:var(--red)}.status.failed .status-dot{background:#d55252}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.button,.remove-button{min-height:38px;border:0;border-radius:10px;padding:9px 12px;font:inherit;font-size:12px;font-weight:650;line-height:1.3;cursor:pointer;transition:transform .12s ease,filter .12s ease,background .12s ease}
+.button:hover:not(:disabled),.remove-button:hover:not(:disabled){filter:brightness(.97);transform:translateY(-1px)}
+button:disabled{opacity:.48;cursor:not-allowed}
+.button.secondary{background:var(--accent-soft);color:var(--accent)}
+.button.primary{background:linear-gradient(145deg,#3274c9,#2259a4);color:#fff;box-shadow:0 5px 12px #245eaa20}
+.domains-card{padding:14px 15px}
+.section-heading{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.section-heading>div{display:flex;align-items:center;gap:8px}
+.section-heading h2{font-size:13px;margin:0}
+.count{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 6px;border-radius:8px;background:var(--accent-soft);color:var(--accent);font-size:10px;font-weight:700}
+.text-button{border:0;background:transparent;color:var(--accent);font:inherit;font-size:11px;font-weight:650;cursor:pointer;padding:5px 4px}
+.domain-list{list-style:none;padding:0;margin:9px 0 0}
+.domain-list li{border-top:1px solid var(--border);padding:9px 1px}.domain-list li:first-child{border-top:0}
+.origin-row{display:flex;align-items:center;justify-content:space-between;gap:9px}
+.origin-info{display:grid;gap:2px;min-width:0}
+.origin-label{direction:ltr;text-align:start;overflow-wrap:anywhere;font:12px Consolas,"Segoe UI",monospace}
+.origin-info small{color:var(--muted);font-size:10px}
+.remove-button{min-height:30px;padding:6px 10px;background:var(--red-soft);color:var(--red);font-size:11px;white-space:nowrap}
+.empty{text-align:center;color:var(--muted);font-size:12px;padding:12px 5px}
+.footer-note{margin:0 3px;color:var(--muted);font-size:10px}
+.guide-launch{width:100%}
+#install-help-toggle[hidden]{display:none}
+.settings-panel{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:12px 14px}
+.settings-panel[hidden]{display:none}
+.settings-panel label{display:grid;gap:4px;color:var(--muted);font-size:11px;font-weight:650}
+.settings-panel select{width:100%;height:34px;border:1px solid var(--border);border-radius:9px;background:var(--card);color:var(--text);padding:0 9px;font:inherit;font-size:12px}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#111a27;--card:#1b2737;--text:#e8eef6;--muted:#a3b1c3;--border:#2c3a4d;--accent:#8ab6ff;--accent-soft:#253b59;--green:#8bd3a9;--green-soft:#1d3a31;--red:#ffaaa2;--red-soft:#402b30;--amber:#f1c57f;--amber-soft:#403727;--shadow:0 12px 32px #0003}
+:root[data-theme="dark"] body{background:radial-gradient(ellipse at top left,#1c2b40 0,transparent 46%),var(--bg)}
+:root[data-theme="dark"] .status{background:#202d3e;border-color:var(--border);color:#c5d0df}
+:root[data-theme="dark"] .status.ready{background:var(--green-soft);color:var(--green)}
+:root[data-theme="dark"] .status.blocked{background:var(--amber-soft);color:var(--amber)}
+:root[data-theme="dark"] .status.failed{background:var(--red-soft);color:var(--red)}
+:root[data-theme="dark"] .brand-mark{box-shadow:none}

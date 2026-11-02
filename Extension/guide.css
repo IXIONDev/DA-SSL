@@ -1,0 +1,28 @@
+.guide-main{max-width:820px;margin:30px auto;padding:0 20px}
+.guide-intro{margin-bottom:18px}
+.guide-intro h1{margin:4px 0;font-size:25px}
+.guide-intro>p:last-child{margin:0;color:var(--muted);font-size:13px}
+.guide-tabs{display:flex;gap:8px;border-bottom:1px solid var(--border);margin-bottom:16px}
+.guide-tab{border:0;border-bottom:3px solid transparent;padding:10px 14px;background:transparent;color:var(--muted);font:inherit;font-weight:650;cursor:pointer}
+.guide-tab.active{border-color:var(--accent);color:var(--accent)}
+.guide-panel{display:grid;gap:18px;padding:22px;background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow)}
+.guide-panel[hidden]{display:none}
+.guide-panel h2{margin:0;font-size:18px}
+.extension-id-card{display:grid;gap:8px;padding:15px;border:1px solid var(--border);border-radius:12px;background:var(--bg)}
+.extension-id-card strong{font-size:13px}
+.extension-id-card p{margin:2px 0 0;color:var(--muted);font-size:11px}
+.package-location code{direction:ltr;text-align:left;overflow-wrap:anywhere;padding:9px 11px;border:1px solid var(--border);border-radius:9px;background:var(--card);font:600 12px/1.55 Consolas,monospace}
+.id-copy-row{display:flex;align-items:center;gap:10px}
+.id-copy-row code{flex:1;direction:ltr;text-align:left;overflow-wrap:anywhere;padding:10px 12px;border-radius:9px;background:var(--card);border:1px solid var(--border);font-size:14px;font-weight:700;letter-spacing:.4px}
+.copy-status{min-height:16px;color:var(--green)!important}
+.guide-return{margin:0;padding-top:8px;border-top:1px solid var(--border);font-weight:650}
+.guide-steps{display:grid;gap:13px;margin:0;padding-inline-start:24px;font-size:13px;line-height:1.7}
+.guide-steps li{padding-inline-start:4px}
+.guide-note{padding:14px 16px;border:1px solid #d5ebdd;border-radius:11px;background:var(--green-soft);color:var(--green);font-size:12px}
+.guide-note strong{display:block;font-size:13px}
+.guide-note p{margin:4px 0 0}
+.guide-note.warning{border-color:#f4e3c6;background:var(--amber-soft);color:var(--amber)}
+.guide-open{justify-self:start}
+:root[data-theme="dark"] .guide-note{border-color:#315442}
+:root[data-theme="dark"] .guide-note.warning{border-color:#5b4a2e}
+@media(max-width:600px){.guide-main{margin:20px auto;padding:0 12px}.guide-panel{padding:16px}.guide-intro h1{font-size:21px}.id-copy-row{align-items:stretch;flex-direction:column}.guide-open{width:100%}}

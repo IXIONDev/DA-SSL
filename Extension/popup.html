@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DA SSL</title><link rel="stylesheet" href="popup.css"></head>
+<body data-title-key="popupTitle">
+  <main class="app-shell">
+    <header class="app-header">
+      <div class="brand"><span class="brand-mark">SSL</span><div><h1 data-i18n="brand">DA SSL</h1><p data-i18n="popupSubtitle">English</p></div></div>
+      <button id="settings-toggle" class="icon-button" type="button" data-i18n-title="settings" data-i18n-aria="settings" title="English">⚙</button>
+    </header>
+    <section id="settings-panel" class="settings-panel" hidden>
+      <label><span data-i18n="theme">English</span><select id="theme-select"><option value="light" data-i18n="light">English</option><option value="dark" data-i18n="dark">English</option></select></label>
+    </section>
+    <section class="card current-card">
+      <div class="card-topline"><span class="eyebrow" data-i18n="currentDomain">English</span><span id="host" class="connection"><i></i><span data-i18n="checking">English…</span></span></div>
+      <p id="domain" class="domain-value">—</p>
+      <div class="error-row"><span data-i18n="sslError">EnglishSSL</span><strong id="error" class="error-value">—</strong></div>
+      <p id="status" class="status" role="status"><span class="status-dot"></span><span data-i18n="reading">English…</span></p>
+      <div class="actions"><button id="add" type="button" class="button secondary" data-i18n="allowDomain">English</button><button id="execute" type="button" class="button primary" disabled data-i18n="continueOnce">EnglishSSL</button></div>
+    </section>
+    <button id="install-help-toggle" class="button secondary guide-launch" type="button" data-i18n="installGuideButton" hidden>English</button>
+    <section class="card domains-card">
+      <div class="section-heading"><div><h2 data-i18n="allowedDomains">English</h2><span id="domain-count" class="count">0</span></div><button id="manage" class="text-button" type="button" data-i18n="openManager">English</button></div>
+      <ul id="origins" class="domain-list"><li class="empty" data-i18n="emptyAllowed">English.</li></ul>
+    </section>
+    <p class="footer-note" data-i18n="notePopup">EnglishChrome English.</p>
+  </main>
+  <script src="ui.js"></script><script src="popup.js"></script>
+</body>
+</html>
