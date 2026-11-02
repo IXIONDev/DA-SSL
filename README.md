@@ -1,4 +1,4 @@
-# 🔐 DA SSL 0.1
+# 🔐 DA SSL v0.1
 
 DA SSL is a Chrome extension with a Windows helper for managing explicitly approved actions on SSL certificate warning pages.
 
